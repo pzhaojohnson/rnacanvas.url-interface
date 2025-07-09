@@ -22,7 +22,7 @@ https://code.rnacanvas.app?sequence=AAGGGGAAAACCCCAAGGGGAAAACCCCAA&dot_bracket=.
 
 Bases can be given colored outlines according to data
 (e.g., base-pair probability data, positional entropy data)
-by utilizing the `data` URL parameter.
+using the `data` URL parameter.
 
 For example, suppose the following structure...
 
@@ -37,10 +37,10 @@ AGAGUAGCAUUCUGCUUUAGACUGUUAACUUUAUGAACCACGCGUGUCACGUGGGGAGAGUUAACAGCGCCC
 0.911,0.323,0.159,0.120,0.116,0.161,0.378,0.090,0.077,0.017,0.024,0.351,0.170,0.121,0.115,0.158,0.316,0.929,0.007,0.007,0.007,0.110,0.026,0.001,0.011,0.017,0.017,0.011,0.001,0.026,0.109,0.507,-0.000,-0.000,0.000,0.000,0.000,0.911,0.924,0.710,0.762,0.838,0.711,0.712,0.632,0.001,0.000,-0.000,0.632,0.832,0.713,0.717,0.742,0.896,0.881,0.500,0.495,0.109,0.027,0.001,0.011,0.017,0.017,0.011,0.001,0.026,0.110,0.001,0.005,0.005,-0.000,-0.000
 ```
 
-(Each comma-separated value represents the positional entropy of a single residue in the structure.)
+(Each comma-separated value is the positional entropy of a residue in the structure.)
 
-This structure is drawn by the following URL
-(where each base is given a colored outline according to its positional entropy value).
+The following URL draws the structure
+and gives each base a colored outline according to its positional entropy value.
 
 ```
 https://code.rnacanvas.app?sequence=AGAGUAGCAUUCUGCUUUAGACUGUUAACUUUAUGAACCACGCGUGUCACGUGGGGAGAGUUAACAGCGCCC&dot_bracket=(((((((....)))))))...(((((((((((.....(((((.......)))))..))))))))))).....&data=0.911,0.323,0.159,0.120,0.116,0.161,0.378,0.090,0.077,0.017,0.024,0.351,0.170,0.121,0.115,0.158,0.316,0.929,0.007,0.007,0.007,0.110,0.026,0.001,0.011,0.017,0.017,0.011,0.001,0.026,0.109,0.507,-0.000,-0.000,0.000,0.000,0.000,0.911,0.924,0.710,0.762,0.838,0.711,0.712,0.632,0.001,0.000,-0.000,0.632,0.832,0.713,0.717,0.742,0.896,0.881,0.500,0.495,0.109,0.027,0.001,0.011,0.017,0.017,0.011,0.001,0.026,0.110,0.001,0.005,0.005,-0.000,-0.000
@@ -48,7 +48,7 @@ https://code.rnacanvas.app?sequence=AGAGUAGCAUUCUGCUUUAGACUGUUAACUUUAUGAACCACGCG
 
 ### Changing the color gradient
 
-By default base outlines are colored along a red-to-white gradient.
+By default base outlines are colored along a white-to-red gradient.
 
 Base outlines can be colored along a gradient similar to what [RNAfold](http://rna.tbi.univie.ac.at/cgi-bin/RNAWebSuite/RNAfold.cgi) uses
 by setting the `color_gradient` URL parameter to `RNAfold`.
@@ -68,14 +68,14 @@ Setting the `color_gradient_direction` URL paramter to `reverse` will reverse th
 https://code.rnacanvas.app?sequence=AGAGUAGCAUUCUGCUUUAGACUGUUAACUUUAUGAACCACGCGUGUCACGUGGGGAGAGUUAACAGCGCCC&dot_bracket=(((((((....)))))))...(((((((((((.....(((((.......)))))..))))))))))).....&data=0.911,0.323,0.159,0.120,0.116,0.161,0.378,0.090,0.077,0.017,0.024,0.351,0.170,0.121,0.115,0.158,0.316,0.929,0.007,0.007,0.007,0.110,0.026,0.001,0.011,0.017,0.017,0.011,0.001,0.026,0.109,0.507,-0.000,-0.000,0.000,0.000,0.000,0.911,0.924,0.710,0.762,0.838,0.711,0.712,0.632,0.001,0.000,-0.000,0.632,0.832,0.713,0.717,0.742,0.896,0.881,0.500,0.495,0.109,0.027,0.001,0.011,0.017,0.017,0.011,0.001,0.026,0.110,0.001,0.005,0.005,-0.000,-0.000&color_gradient=RNAfold&color_gradient_direction=reverse
 ```
 
-Reversing the direction of the color gradient can be useful
+Reversing the direction of a color gradient can be useful
 when one's data are base-pair probability data
 rather than positional entropy data.
 
 ### Setting color gradient boundaries
 
-By default the minimum data value will correspond to the very beginning of the color gradient
-and the maximum data value will correspond to the very end of the color gradient.
+By default the minimum data value will be made to correspond to the very beginning of the color gradient
+and the maximum data value will be made to correspond to the very end of the color gradient.
 
 Explicitly setting the `data_min` and `data_max` URL parameters allows one to control where data values fall along the color gradient.
 
