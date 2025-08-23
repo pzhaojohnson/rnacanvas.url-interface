@@ -18,6 +18,16 @@ AAGGGGAAAACCCCAAGGGGAAAACCCCAA
 https://code.rnacanvas.app?sequence=AAGGGGAAAACCCCAAGGGGAAAACCCCAA&dot_bracket=..((((....))))..((((....))))..
 ```
 
+### Hiding the peripheral UI
+
+The peripheral UI (which includes things like the lower-left Toolbar and top-left `Open`, `Save` and `Export` buttons)
+can be hidden by setting the `peripheral_ui` URL parameter to `none`.
+
+```
+https://code.rnacanvas.app?peripheral_ui=none&sequence=AAGGGGAAAACCCCAAGGGGAAAACCCCAA&dot_bracket=..((((....))))..((((....))))..
+```
+
+
 ### Color bases according to data
 
 Bases can be given colored outlines according to data
