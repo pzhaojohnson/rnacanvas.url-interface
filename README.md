@@ -39,7 +39,7 @@ to reopen the current drawing in a new tab
 https://code.rnacanvas.app?peripheral_ui=minimal&sequence=AAGGGGAAAACCCCAAGGGGAAAACCCCAA&dot_bracket=..((((....))))..((((....))))..
 ```
 
-### Color bases according to data
+# Color bases according to data
 
 Bases can be given colored outlines according to data
 (e.g., base-pair probability data, positional entropy data)
