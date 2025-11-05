@@ -29,11 +29,11 @@ https://code.rnacanvas.app?peripheral_ui=none&sequence=AAGGGGAAAACCCCAAGGGGAAAAC
 
 ### Showing a minimal peripheral UI
 
-Alternatively, a minimalistic peripheral UI can be shown.
-
-At this time the minimal peripheral UI simply includes a top-right `Edit` button
-to reopen the current drawing in a new tab
-(with the full peripheral UI to be shown in the new tab).
+Alternatively, a minimalistic peripheral UI can be shown,
+which will include just a bottom-right `Download` button
+and a top-right `Edit` button
+that when clicked will reopen the current drawing in a new tab
+(with a full peripheral UI).
 
 ```
 https://code.rnacanvas.app?peripheral_ui=minimal&sequence=AAGGGGAAAACCCCAAGGGGAAAACCCCAA&dot_bracket=..((((....))))..((((....))))..
